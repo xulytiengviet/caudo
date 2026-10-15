@@ -1,5 +1,9 @@
 name: Normalize original Bitcoin Puzzle dossier
 on:
+  push:
+    paths:
+      - 'scripts/build_dataset.py'
+      - '.github/workflows/normalize.yml'
   workflow_dispatch:
   schedule:
     - cron: '15 3 1 * *'
